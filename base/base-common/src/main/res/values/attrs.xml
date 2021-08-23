@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="isCircle" format="boolean" />
+    <attr name="corner" format="dimension" />
+    <attr name="corner_lt" format="dimension" />
+    <attr name="corner_rt" format="dimension" />
+    <attr name="corner_rb" format="dimension" />
+    <attr name="corner_lb" format="dimension" />
+    <attr name="corner_stroke_size" format="dimension" />
+    <attr name="corner_background_color" format="color" />
+    <attr name="corner_stroke_color" format="color" />
+
+    <declare-styleable name="CornerImageView">
+        <attr name="corner" />
+        <attr name="isCircle" />
+        <attr name="corner_background_color" />
+    </declare-styleable>
+
+    <declare-styleable name="CornerFrameLayout">
+        <attr name="corner" />
+        <attr name="corner_lt" />
+        <attr name="corner_rt" />
+        <attr name="corner_rb" />
+        <attr name="corner_lb" />
+        <attr name="corner_stroke_color" />
+        <attr name="corner_stroke_size" />
+    </declare-styleable>
+
+    <declare-styleable name="CornerRoundView">
+        <attr name="corner" />
+        <attr name="corner_stroke_size" />
+        <attr name="corner_background_color" />
+        <attr name="corner_stroke_color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">baseAndroid</string>
+    <string name="modules_home">亲友</string>
+    <string name="modules_store">资讯</string>
+    <string name="modules_circle">定位</string>
+    <string name="modules_mine">我的</string>
+    <string name="privacy_regulations_text">《用户服务与隐私协议》</string>
+    <string name="privacy_regulations_hint">同意以上条款后即可开始使用 APP</string>
+    <string name="privacy_regulations_title">温馨提示</string>
+    <string name="privacy_regulations_cancel">不同意</string>
+    <string name="privacy_regulations_affirm">同意</string>
+
+</resources>

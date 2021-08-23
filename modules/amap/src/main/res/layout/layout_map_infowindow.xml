@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <cn.ycgo.base.common.widget.CornerFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            app:corner="16dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:textColor="@color/font_black"
+                android:textSize="12sp" />
+        </cn.ycgo.base.common.widget.CornerFrameLayout>
+
+        <cn.ycgo.base.common.widget.CornerFrameLayout
+            android:layout_width="14dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_horizontal"
+            app:corner_lb="18dp"
+            app:corner_rb="18dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_white" />
+        </cn.ycgo.base.common.widget.CornerFrameLayout>
+    </LinearLayout>
+</layout>

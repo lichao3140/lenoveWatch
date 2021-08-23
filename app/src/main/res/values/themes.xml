@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <style name="AppTheme" parent="XUITheme.Phone">
+        <item name="android:windowBackground">@color/color_transparency</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorAccent">@color/color_theme</item>
+        <item name="colorPrimaryDark">@color/color_theme10</item>
+        <item name="colorPrimary">@color/color_theme</item>
+        <item name="android:windowAnimationStyle">@style/ActivityDefaultAnimation</item>
+        <!-- AppCompatEditText默认状态状态设置底线颜色 -->
+        <item name="colorControlNormal">@color/color_gray</item>
+        <!-- AppCompatEditText选择的底线颜色 -->
+        <item name="colorControlActivated">@color/color_theme</item>
+    </style>
+
+    <style name="AppTheme.NoAnim" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="AppTheme.TRANSPARENT" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="splashTheme" parent="AppTheme.NoAnim">
+        <item name="android:windowBackground">@color/color_theme</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:ignore="NewApi">false</item>
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:ignore="NewApi">shortEdges</item>
+    </style>
+</resources>

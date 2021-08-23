@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingTop="50dp">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <!--这里不能用CornerFrameLayout，否则childView无法做突出式的控件-->
+            <FrameLayout
+                android:id="@+id/root_view_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bottom_dialog"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                app:corner_lt="20dp"
+                app:corner_rt="20dp"
+                app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+              >
+
+                <cn.ycgo.base.common.widget.CornerRoundView
+                    android:id="@+id/iv_sheet_element"
+                    android:layout_width="41dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    app:corner_background_color="@color/color_gray_EEF0F6"
+                    app:corner="2dp" />
+
+            </FrameLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="FullScreenDialog.DefaultAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/default_enter_anim_full_screen_dialog</item>
+        <item name="android:windowExitAnimation">@anim/default_exit_anim_full_screen_dialog</item>
+    </style>
+
+    <style name="FullScreenDialog.DefaultExitAnim" parent="android:Animation">
+        <item name="android:windowExitAnimation">@anim/default_exit_anim_full_screen_dialog</item>
+    </style>
+
+    <style name="BottomDialog.DefaultAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/default_enter_anim_bottom_dialog</item>
+        <item name="android:windowExitAnimation">@anim/default_exit_anim_bottom_dialog</item>
+    </style>
+
+    <style name="BottomDialog.DefaultExitAnim" parent="android:Animation">
+        <item name="android:windowExitAnimation">@anim/default_exit_anim_bottom_dialog</item>
+    </style>
+
+</resources>

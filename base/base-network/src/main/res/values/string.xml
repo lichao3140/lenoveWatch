@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="tip_request_default_error">网络连接错误</string>
+<string name="tip_request_server_busy_fail">服务器繁忙</string>
+<string name="tip_request_illegal_state_fail">参数解析失败</string>
+<string name="tip_request_link_state_fail">地址解析失败</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.ycgo.base.medial">
+
+    <application>
+        <activity android:name="cn.ycgo.base.medial.view.DebugActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="cn.ycgo.base.medial.view.PreviewPhotoActivity"
+            android:screenOrientation="portrait"
+            />
+    </application>
+</manifest>

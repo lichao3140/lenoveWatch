@@ -1,0 +1,88 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "cn.ycgo.baseandroid.app"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 106
+        versionName "1.1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs { // 需要buildTypes之前
+        release {
+//            keyAlias 'msapp'
+//            keyPassword '123123'
+//            storeFile file('../msapp.keystore.jks')
+//            storePassword '123123'
+//            v1SigningEnabled = true
+//            v2SigningEnabled = true
+        }
+        debug {
+//            keyAlias 'msapp'
+//            keyPassword '123123'
+//            storeFile file('../msapp.keystore.jks')
+//            storePassword '123123'
+//            v1SigningEnabled = true
+//            v2SigningEnabled = true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    //multiDex的一些相关配置，这样配置可以让你的编译速度更快
+    dexOptions {
+        preDexLibraries = false //让它不要对Lib做preDexing
+
+        javaMaxHeapSize "4g"     //增加java堆内存大小
+    }
+}
+
+dependencies {
+    implementation project(path: ':base:base-medial')
+    implementation project(path: ':components:browser')
+    implementation project(path: ':components:circle')
+    implementation project(path: ':components:mine')
+    implementation project(path: ':components:relatives')
+    implementation project(path: ':components:information')
+    implementation project(path: ':modules:amap')
+    kapt 'com.alibaba:arouter-compiler:1.5.1'
+}
+
+repositories {
+    mavenCentral()
+}

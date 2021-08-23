@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <cn.ycgo.base.medial.widget.WheelRecyclerView
+                android:id="@+id/wheel_province"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:dividerColor="@color/color_gray_ED"
+                app:dividerHeight="0.5dp"
+                app:dividerWidth="100dp"
+                app:selectTextSize="15sp"
+                app:unselectTextSize="12sp" />
+
+            <cn.ycgo.base.medial.widget.WheelRecyclerView
+                android:id="@+id/wheel_city"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:dividerColor="@color/color_gray_ED"
+                app:dividerHeight="0.5dp"
+                app:dividerWidth="100dp"
+                app:selectTextSize="15sp"
+                app:unselectTextSize="12sp" />
+
+            <cn.ycgo.base.medial.widget.WheelRecyclerView
+                android:id="@+id/wheel_county"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:dividerColor="@color/color_gray_ED"
+                app:dividerHeight="0.5dp"
+                app:dividerWidth="100dp"
+                app:selectTextSize="15sp"
+                app:unselectTextSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_exit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@color/color_gray_F7F9FB"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="@string/text_cancel"
+                android:textColor="@color/font_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@color/color_theme60"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="@string/text_confirm"
+                android:textColor="@color/font_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_gray_ED" />
+    </LinearLayout>
+</layout>

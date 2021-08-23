@@ -1,0 +1,32 @@
+include ':components:information'
+include ':components:relatives'
+include ':components:mine'
+include ':components:circle'
+//include ':components:mine'
+//include ':components:information'
+//include ':components:location'
+//include ':components:motion'
+//include ':components:relatives'
+//环信
+include ':modules:datepickerlibrary'//选择器
+include ':modules:amap'//地图
+//第三方登录 & 支付
+include ':modules:qsvideoplayer'//播放器
+//用户模块
+//广告模块
+//分享模块
+//医疗相关模块
+//商城相关模块
+//个人模块
+//帖子动态模块
+//消息模块
+//首页
+include ':components:browser'//webView模块
+include ':base:base-medial'
+include ':base:base-framework'
+include ':base:resources'
+include ':base:base-common'
+include ':base:base-network'
+include ':app'
+rootProject.name = "lenoveWatch"
+

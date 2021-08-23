@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActivityDefaultAnimation" parent="android:Animation">
+        <!--一定要时间和进入动画相同的空动画，可以解决黑屏-->
+        <item name="android:activityOpenExitAnimation">@anim/nothing</item>
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/nothing</item>
+    </style>
+
+    <style name="ActivityLoginAnimation" parent="android:Animation">
+        <!--一定要时间和进入动画相同的空动画，可以解决黑屏-->
+        <item name="android:activityOpenExitAnimation">@anim/nothing</item>
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_bottom</item>
+        <item name="android:activityCloseEnterAnimation">@anim/nothing</item>
+    </style>
+
+</resources>

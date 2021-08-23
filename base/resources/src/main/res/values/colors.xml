@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--不透明度参照表-->
+    <!--
+    100%=FF（不透明） 95%=F2  90%=E5  85%=D8  80%=CC 75%=BF  70%=B2
+    65%=A5  60%=99  55%=8C  50%=7F
+    45%=72  40%=66  35%=59  30%=4C  25%=3F  20%=33  15%=21  10%=19
+    5%=0C   0%=00（全透明）
+    -->
+
+    <color name="color_window_bg_color">@color/color_gray_F7F9FB</color>
+    <color name="color_system_status_bar">@color/color_white</color>
+    <color name="color_system_navigation_bar">@color/color_gray_EEF0F6</color>
+
+    <!-- color -->
+    <color name="color_title_line">#EEF0F6</color>
+    <color name="color_transparency">#00ffffff</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_theme">#16C9D8</color>
+    <color name="color_theme10">#1916C9D8</color>
+    <color name="color_theme5">#0c16C9D8</color>
+    <color name="color_theme60">#9916C9D8</color>
+    <color name="color_E3FDFF">#E3FDFF</color>
+    <color name="color_app_orange">#FA9900</color>
+    <color name="color_app_orange10">#19FA9900</color>
+    <color name="color_msg_bg">@color/color_red_F94D36</color>
+    <color name="color_red_E90C0C">#E90C0C</color>
+    <color name="color_red_F94D36">#F94D36</color>
+    <color name="color_red_F94D36_10">#19F94D36</color>
+    <color name="color_red_FF8B6C">#FF8B6C</color>
+    <color name="color_FFF4F0">#FFF4F0</color>
+    <color name="color_red_FF8B6C_10">#19FF8B6C</color>
+    <color name="color_red_FFEFE9">#FFEFE9</color>
+    <color name="color_black">#000000</color>
+    <color name="color_black50">#7f000000</color>
+    <color name="color_black10">#19000000</color>
+    <color name="color_black20">#33000000</color>
+    <color name="color_black30">#4C000000</color>
+    <color name="color_black65">#A5000000</color>
+    <color name="color_black_0A">#0a0a0a</color>
+    <color name="color_black_40_80">#CC404040</color>
+    <!--  灰度 -->
+    <color name="color_gray">#CCCCCC</color>
+    <color name="color_gray_CC_40">#66cccccc</color>
+    <color name="color_gray_95">#959595</color>
+    <color name="color_gray_99">#999999</color>
+    <color name="color_gray_EEF0F6">#EEF0F6</color>
+    <color name="color_gray_F6F7F9">#F6F7F9</color>
+    <color name="color_gray_E2">#e2e2e2</color>
+    <color name="color_gray_E2_30">#4Ce2e2e2</color>
+    <color name="color_gray_ED">#EDEDED</color>
+    <color name="color_gray_DD">#DDDDDD</color>
+    <color name="color_gray_F3">#F3F3F3</color>
+    <color name="color_gray_AB">#ababab</color>
+    <color name="color_gray_BAC5D2">#BAC5D2</color>
+    <color name="color_gray_727177">#727177</color>
+    <color name="color_gray_727177_75">#BF727177</color>
+    <color name="color_gray_F7F9FB">#F7F9FB</color>
+    <color name="color_gray_F3F4F6">#F3F4F6</color>
+    <color name="color_gray_6B">#6B6B6B</color>
+
+    <!--字体-->
+    <color name="font_gray">@color/color_gray</color>
+    <color name="font_black_26252D">#26252D</color>
+    <color name="font_black_1C">#1C1C1C</color>
+    <color name="font_black">#333333</color>
+    <color name="font_black60">#99333333</color>
+    <color name="font_white">#ffffff</color>
+
+
+    <!--    easy_photos-->
+    <color name="easy_photos_fg_primary">#ffffff</color>
+    <color name="easy_photos_fg_primary_dark">#9b9b9b</color>
+    <color name="easy_photos_fg_accent">@color/color_theme</color>
+    <!--easy_photos背景色-->
+    <color name="easy_photos_bg_primary">#000000</color>
+    <!--easy_photos操作栏颜色-->
+    <color name="easy_photos_bar_primary">#393a3f</color>
+    <color name="easy_photos_bar_primary_dark">#303135</color>
+    <color name="easy_photos_bar_primary_translation">#eb212123</color>
+    <!--easy_photos状态栏-->
+    <color name="easy_photos_status_bar">#393a3f</color>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+
+        <FrameLayout
+            android:id="@+id/v_close"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="end|center_vertical"
+            >
+
+            <cn.ycgo.base.common.widget.CornerRoundView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                app:corner="10dp"
+                app:corner_stroke_color="#555555"
+                app:corner_stroke_size="1.5dp" />
+
+            <cn.ycgo.base.common.widget.CornerRoundView
+                android:layout_width="10dp"
+                android:layout_height="7dp"
+                android:layout_gravity="center"
+                app:corner="3dp"
+                app:corner_background_color="#cc5555" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/v_web_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</layout>

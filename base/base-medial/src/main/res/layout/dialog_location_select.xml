@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bottom_dialog"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_exit"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="@string/text_cancel"
+                android:textColor="@color/font_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="@string/text_confirm"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/font_black"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <cn.ycgo.base.medial.widget.WheelRecyclerView
+                android:id="@+id/wheel_province"
+                android:layout_width="0dp"
+                app:selectTextSize="15sp"
+                app:unselectTextSize="12sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:dividerColor="@color/color_gray_ED"
+                app:dividerHeight="0.5dp"
+                app:dividerWidth="100dp" />
+
+            <cn.ycgo.base.medial.widget.WheelRecyclerView
+                android:id="@+id/wheel_city"
+                android:layout_width="0dp"
+                app:selectTextSize="15sp"
+                app:unselectTextSize="12sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:dividerColor="@color/color_gray_ED"
+                app:dividerHeight="0.5dp"
+                app:dividerWidth="100dp" />
+
+            <cn.ycgo.base.medial.widget.WheelRecyclerView
+                android:id="@+id/wheel_county"
+                android:layout_width="0dp"
+                app:selectTextSize="15sp"
+                app:unselectTextSize="12sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:dividerColor="@color/color_gray_ED"
+                app:dividerHeight="0.5dp"
+                app:dividerWidth="100dp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
